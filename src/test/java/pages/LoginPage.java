@@ -17,7 +17,8 @@ public class LoginPage extends RunCucumber {
 
     // ações / funções / métodos
     public void acessarAplicao() {
-        getDriver("firefox").get(URL);
+        String browser = System.getProperty("browser");
+        getDriver(browser).get(URL);
     }
 
     public void acessarTelaLogin() {

@@ -49,17 +49,7 @@ public class LoginSteps extends RunCucumber {
         loginPage.verificaLoginSucesso();
     }
     	@After
-    public static void takeScreenShot(Scenario scenario) {
-        System.out.println("============");
-        System.out.println("Teste que esta sendo executado: " + scenario.getName());
-        System.out.println("Status: " + scenario.getStatus());
-        System.out.println("Tag: " + scenario.getSourceTagNames());
-        System.out.println("============");
-        if (scenario.isFailed()) {
-            //tirar print da tela
-            ScreenshotUtils.addScreenshotOnScenario(scenario);
-        }
-
+    public static void afterScenario(Scenario scenario) {
+         ScreenshotUtils.addScreenshotOnScenario(scenario);
     }
-
 }

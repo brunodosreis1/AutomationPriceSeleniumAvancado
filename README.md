@@ -8,7 +8,7 @@
 * IntelliJ IDEA
 * MAVEN > Gerenciador de dependências e usado tambem para gerar relatórios;
 * JUNIT > Para executar os testes;
-* Cucumber > usado para escrever as features em formato BDD.
+* Cucumber > usado para interpretar as features  escritas em formato Gherkin e transformar em métodos a serem executados
 
 Site utilizado para os testes: http://www.automationpratice.com.br/
 
